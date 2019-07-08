@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2C19A17-EF69-4D36-B5D4-D06146A163CF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>appcontinuaforms</RootNamespace>
+    <AssemblyName>appcontinuaforms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.16.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alumnos.cs" />
+    <Compile Include="Docentes.cs" />
+    <Compile Include="Error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Error.Designer.cs">
+      <DependentUpon>Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioProgramas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioProgramas.Designer.cs">
+      <DependentUpon>FormularioProgramas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClickDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickDocentes.Designer.cs">
+      <DependentUpon>frmClickDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClickFinalizaciónCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickFinalizaciónCurso.Designer.cs">
+      <DependentUpon>frmClickFinalizaciónCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClickGestionarListas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickGestionarListas.Designer.cs">
+      <DependentUpon>frmClickGestionarListas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClickRegistrarAspirante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickRegistrarAspirante.Designer.cs">
+      <DependentUpon>frmClickRegistrarAspirante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClickReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClickReportes.Designer.cs">
+      <DependentUpon>frmClickReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorialAlumno.Designer.cs">
+      <DependentUpon>frmHistorialAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistorialDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistorialDocente.Designer.cs">
+      <DependentUpon>frmHistorialDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMatricularAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMatricularAlumno.Designer.cs">
+      <DependentUpon>frmMatricularAlumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmregistraraspirante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmregistraraspirante.Designer.cs">
+      <DependentUpon>frmregistraraspirante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmregistrardocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmregistrardocente.Designer.cs">
+      <DependentUpon>frmregistrardocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personas.cs" />
+    <Compile Include="ConexionBD.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="pantallaprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pantallaprincipal.Designer.cs">
+      <DependentUpon>pantallaprincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaalumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaalumno.Designer.cs">
+      <DependentUpon>consultaalumno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Usuarios.cs" />
+    <EmbeddedResource Include="Error.resx">
+      <DependentUpon>Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioProgramas.resx">
+      <DependentUpon>FormularioProgramas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClickDocentes.resx">
+      <DependentUpon>frmClickDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClickFinalizaciónCurso.resx">
+      <DependentUpon>frmClickFinalizaciónCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClickGestionarListas.resx">
+      <DependentUpon>frmClickGestionarListas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClickRegistrarAspirante.resx">
+      <DependentUpon>frmClickRegistrarAspirante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClickReportes.resx">
+      <DependentUpon>frmClickReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorialAlumno.resx">
+      <DependentUpon>frmHistorialAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistorialDocente.resx">
+      <DependentUpon>frmHistorialDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMatricularAlumno.resx">
+      <DependentUpon>frmMatricularAlumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmregistraraspirante.resx">
+      <DependentUpon>frmregistraraspirante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmregistrardocente.resx">
+      <DependentUpon>frmregistrardocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pantallaprincipal.resx">
+      <DependentUpon>pantallaprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaalumno.resx">
+      <DependentUpon>consultaalumno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1464_1477072388.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\examen %281%29 %281%29 %281%29 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudiante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profesor %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diploma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plan-de-estudios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dos-carpetas-o-libros-de-la-biblioteca %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libros %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoIUSH png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoIUSH png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busqueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profesor %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en-linea %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
